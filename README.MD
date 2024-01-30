@@ -38,11 +38,8 @@ The program provides a simple CLI, tha provides you with these choices: <br>
 Option 1 lets you use feature #1 and Option 2 lets you use feature #2.
 
 ### Execution and Testing
-To execute the program, run: 
-
+To execute the program, run:<br>
 mvn exec:java
 
-To run tests, run: 
-
+To run tests, run:<br>
 mvn test
-
