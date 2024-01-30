@@ -29,10 +29,10 @@ Feel free to use your favorite:
 P.S. Googling is a good thing :-)
 
 ## The result
-The program provides a simple CLI, tha provides you with these choices:
-    1. Check if two strings are anagrams
-    2. Return all anagrams, that you entered for a given subject
-    3. Exit
+The program provides a simple CLI, tha provides you with these choices: <br>
+    1. Check if two strings are anagrams <br>
+    2. Return all anagrams, that you entered for a given subject <br>
+    3. Exit <br>
 
 Option 1 lets you use feature #1 and Option 2 lets you use feature #2.
 
