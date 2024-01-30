@@ -27,3 +27,15 @@ Feel free to use your favorite:
     You can prioritize however you like (performance, readability, extensibility, ...).
 
 P.S. Googling is a good thing :-)
+
+## The result
+The program provides a simple CLI, tha provides you with these choices:
+    1. Check if two strings are anagrams
+    2. Return all anagrams, that you entered for a given subject
+    3. Exit
+
+Option 1 lets you use feature #1 and Option 2 lets you use feature #2.
+
+### Execution and Testing
+To execute the program, run: 'mvn exec:java'
+To run tests, run: 'mvn test'

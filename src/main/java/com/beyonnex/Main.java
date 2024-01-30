@@ -7,6 +7,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
+        // Build a CLI
         while (true) {
             System.out.println("\nWhat would you like to do?");
             System.out.println("1. Check if two strings are anagrams");
@@ -15,7 +16,7 @@ public class Main {
             System.out.print("Enter your choice (1, 2 or 3): ");
 
             int choice = scanner.nextInt();
-            scanner.nextLine(); // Consume the newline
+            scanner.nextLine();
 
             switch (choice) {
                 case 1:
@@ -33,7 +34,7 @@ public class Main {
                     String subjectToSearch = scanner.nextLine();
 
                     String[] anagrams = Anagram.findAnagrams(subjectToSearch);
-                    System.out.println("Anagrams for \"" + subjectToSearch + "\" are: " + Arrays.toString(anagrams).replace('[', ' ').replace(']', ' '));
+                    System.out.println("Anagrams for \"" + subjectToSearch + "\" are: " + fromatArray(anagrams));
                     break;
                 case 3:
                     System.out.println("Exiting the application.");
@@ -44,4 +45,10 @@ public class Main {
             }
         }
     }
+
+    private static String fromatArray(String[] stringArray){
+        String arrayString = Arrays.toString(stringArray);
+        return arrayString.replaceAll("^\\[|\\]$", "").trim();
+    }
+
 }
